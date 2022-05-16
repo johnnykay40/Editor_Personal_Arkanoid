@@ -9,7 +9,15 @@ public class Player : MonoBehaviour
 
     private float inputValue;
     private Vector2 direction;
-         
+
+    Vector2 startPosition;
+
+
+    private void Start()
+    {
+        startPosition = transform.position;
+    }
+
     void Update()
     {
         inputValue = Input.GetAxisRaw("Horizontal");
@@ -28,6 +36,11 @@ public class Player : MonoBehaviour
         }
 
         rigidBody2D.AddForce(direction * moveSpeed * Time.deltaTime * 100);
+    }
 
+    public void ResetPlayer()
+    {
+        transform.position = startPosition;
+        rigidBody2D.velocity = Vector2.zero;
     }
 }

@@ -2282,6 +2282,7 @@ GameObject:
   - component: {fileID: 1622658636}
   - component: {fileID: 1622658638}
   - component: {fileID: 1622658637}
+  - component: {fileID: 1622658639}
   m_Layer: 0
   m_Name: Bottom Wall
   m_TagString: BottomWall
@@ -2382,6 +2383,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1622658639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622658635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c492e62feade0684c8677cff429c1f6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lives: 3
 --- !u!4 &1686739750 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2894345714126722111, guid: 9a6b3eb1fe4ea0c40833c4bf32eae63c, type: 3}
@@ -2784,11 +2798,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 871000252114155444, guid: 3af1c1d263b60e4498a546ef86db1efd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.18
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 871000252114155444, guid: 3af1c1d263b60e4498a546ef86db1efd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.55
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 871000252114155444, guid: 3af1c1d263b60e4498a546ef86db1efd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2845,6 +2859,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3881939980431674290, guid: c74fde5b245ba15479e36f802a2e122f, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3881939980431674290, guid: c74fde5b245ba15479e36f802a2e122f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3881939980431674290, guid: c74fde5b245ba15479e36f802a2e122f, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3881939980431674292, guid: c74fde5b245ba15479e36f802a2e122f, type: 3}
